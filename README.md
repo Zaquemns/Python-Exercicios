@@ -1,2 +1,1 @@
-# teste
-teste
+# Lista de exercícios em Python
