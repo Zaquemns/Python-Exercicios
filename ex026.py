@@ -1,0 +1,7 @@
+frase = str(input('Digite uma frase: ')).strip().lower()
+a = frase.count('a')
+a0 = (frase.find('a', 0,))
+an = frase.rfind('a', 0,)
+print(f'A letra A aparece {a} vezes no total.')
+print(f'A letra A aparece primeiro na posição {a0 + 1}.')
+print(f'A letra A aparece por último na posição {an + 1}.')
