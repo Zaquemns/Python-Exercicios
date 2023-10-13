@@ -1,4 +1,4 @@
-v = int(input('Digite a velocidade do carro: '))
+v = float(input('Digite a velocidade do carro: '))
 limite = 80
 multa = (v - limite) * 7
 

@@ -1,4 +1,4 @@
-km = int(input('Digite a distância da viagem em KM: '))
+km = float(input('Digite a distância da viagem em KM: '))
 v1 = km * 0.5
 v2 = km * 0.45
 
