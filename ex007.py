@@ -1,5 +1,5 @@
 n1 = float(input('Digite a primeira nota: '))
 n2 = float(input('Digite a segunda nota: '))
-m = (n1 + n2)/2
-print('A média aritmética do aluno é {}.'.format(m))
+m = (n1 + n2) / 2
+print(f'A média aritmética do aluno é {m}.')
 

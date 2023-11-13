@@ -7,4 +7,3 @@ pygame.mixer.music.play()
 while pygame.mixer.music.get_busy():
     pass
 
-# Solução do Gustavo Guanabara não funciona mais!

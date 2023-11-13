@@ -1,7 +1,4 @@
 x = int(input('Digite um número: '))
-y = float(input('Digite outro número: '))
+y = int(input('Digite outro número: '))
 z = x + y
-print('O valor da soma entre {} e {} é {}'.format(x, y, z))
-
-
-
+print(f'O valor da soma entre {x} e {y} é {z}.')
