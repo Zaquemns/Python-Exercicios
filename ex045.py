@@ -10,14 +10,19 @@ str(print("""Escolha:
 """))
 
 jog = int(input("Sua escolha: "))
+if jog > 2:
+    print("JOGADA INVÁLIDA")
+
 print(f"Eu escolho {jkp[cpu]}.")
 print(f"Você escolhe {jkp[jog]}.")
-print(f"{jkp[cpu]} VS {jkp[jog]}.")
+print(f"{jkp[cpu]} VS {jkp[jog]}")
 
-if jog != cpu:
+if jog == cpu:
+    print("DEU EMPATE!")
+elif jog != cpu:
     if jog == 0 and cpu == 2 or jog == 1 and cpu == 0 or jog == 2 and cpu == 1:
         print(f"{jkp[jog]} derrota {jkp[cpu]}. VOCÊ VENCEU!")
     else:
         print(f"{jkp[cpu]} derrota {jkp[jog]}. EU VENCI!")
 else:
-    print("DEU EMPATE!")
+    print("JOGADA INVÁLIDA! Você viajou...")
