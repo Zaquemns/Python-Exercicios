@@ -1,20 +1,23 @@
-from random import choice
+from random import randint
 
-pedra = str("pedra")
-papel = str("papel")
-tesoura = str("tesoura")
-str(print("JO KEN PO..."))
-res = str(input("Escolha: pedra, papel ou tesoura? "))
-jkp = ["pedra", "papel", "tesoura"]
-res0 = choice(jkp)
-print(f"Eu escolho: {res0.upper()}")
-print(f"Você escolhe: {res.upper()}")
-print(f"{res0.upper()} VS {res.upper()}")
+jkp = ('PEDRA', 'PAPEL', 'TESOURA')
+cpu = randint(0, 2)
+str(print("""Escolha: 
 
-if res == res0:
-    print("DEU EMPATE!")
-elif res != res0:
-    if res == papel and res0 == pedra or res == pedra and res0 == tesoura or res == tesoura and res0 == papel:
-        print(f"{res.upper()} derrota {res0.upper()}. VOCÊ VENCEU!")
+[ 0 ] PEDRA
+[ 1 ] PAPEL
+[ 2 ] TESOURA
+"""))
+
+jog = int(input("Sua escolha: "))
+print(f"Eu escolho {jkp[cpu]}.")
+print(f"Você escolhe {jkp[jog]}.")
+print(f"{jkp[cpu]} VS {jkp[jog]}.")
+
+if jog != cpu:
+    if jog == 0 and cpu == 2 or jog == 1 and cpu == 0 or jog == 2 and cpu == 1:
+        print(f"{jkp[jog]} derrota {jkp[cpu]}. VOCÊ VENCEU!")
     else:
-        print(f"{res0.upper()} derrota {res.upper()}. EU VENCI!")
+        print(f"{jkp[cpu]} derrota {jkp[jog]}. EU VENCI!")
+else:
+    print("DEU EMPATE!")

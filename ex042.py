@@ -8,7 +8,7 @@ if a + b > c and a + c > b and a < b + c:
         print("O triângulo é EQUILÁTERO!")
     elif a == b or a == c or b == c:
         print("O triângulo é ISÓSCELES!")
-    elif a != b != c:
+    else:
         print("O triângulo é ESCALENO!")
 else:
     print("O triângulo não existe!")
