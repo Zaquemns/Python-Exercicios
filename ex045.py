@@ -24,4 +24,3 @@ else:
         print(f"{jkp[jog]} derrota {jkp[cpu]}. VOCÊ VENCEU!")
     else:
         print(f"{jkp[cpu]} derrota {jkp[jog]}. EU VENCI!")
-
