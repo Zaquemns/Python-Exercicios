@@ -19,10 +19,9 @@ print(f"{jkp[cpu]} VS {jkp[jog]}")
 
 if jog == cpu:
     print("DEU EMPATE!")
-elif jog != cpu:
+else:
     if jog == 0 and cpu == 2 or jog == 1 and cpu == 0 or jog == 2 and cpu == 1:
         print(f"{jkp[jog]} derrota {jkp[cpu]}. VOCÊ VENCEU!")
     else:
         print(f"{jkp[cpu]} derrota {jkp[jog]}. EU VENCI!")
-else:
-    print("JOGADA INVÁLIDA! Você viajou...")
+
